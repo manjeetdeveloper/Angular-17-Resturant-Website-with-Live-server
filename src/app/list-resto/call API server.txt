@@ -1,0 +1,19 @@
+call API server
+    start api server : json-server --watch db.json
+    make service
+    call api in server
+    show data in html file with table
+
+
+    Jo hamne Db file bany ahai usme ja kr change jkrnge 
+
+
+    LETS GET STARTED :---- 
+
+
+    AB HAM API CALL KR KE DEHTE HAI :- 😎😎😎😎😎😎
+
+
+
+
+    Yhaa pr jo ham url provide kruiye hai wo mila nhau hai  so.. 

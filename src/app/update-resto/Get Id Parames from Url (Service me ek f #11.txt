@@ -1,0 +1,6 @@
+Get Id Parames from Url (Service me ek fun banynge)
+    make service function for get api
+    call get api for Id
+    make service function for put api 
+    patch data in from
+    call update api 

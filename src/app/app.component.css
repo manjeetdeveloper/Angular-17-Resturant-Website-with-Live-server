@@ -1,0 +1,29 @@
+footer {
+  background-color: #e1e3e6;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+
+}
+/* html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1;
+}
+
+footer {
+  background-color: #e1e3e6;
+  padding: 10px;
+  text-align: center;
+} */
