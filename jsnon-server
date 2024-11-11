@@ -1,0 +1,83 @@
+
+{
+  "restaurants": [
+    {
+      "name": "Lovely Sweets",
+      "email": "lovelysweets@test.com",
+      "address": "Phagwara Punjab,India",
+      "id": "fedf"
+    },
+    {
+      "id": "3755",
+      "name": "Mc Doanl ",
+      "email": "mc@test.com",
+      "address": "Jalandher"
+    },
+    {
+      "id": "6b2c",
+      "name": "Ovean Express",
+      "email": "oven@test.com",
+      "address": "Lovely Food Court"
+    },
+    {
+      "name": "Puzza Hub",
+      "email": "hubpizza@test.com",
+      "address": "Delhi Sector",
+      "id": "9a28"
+    },
+    {
+      "id": "0c5b",
+      "name": "DOtnet Burger King Restaurant",
+      "email": "dotnet@test.com",
+      "address": "Noida Sector 60"
+    },
+    {
+      "id": "d22f",
+      "name": "Juilyat Chiken Restaurant",
+      "email": "Juilyat@test.com",
+      "address": "Hajipur, Chapra"
+    },
+    {
+      "id": "cdc9",
+      "name": "CHat HUB",
+      "email": "chathub@test.com",
+      "address": "Samalkha Delhi, Sector 43"
+    },
+    {
+      "id": "a4a6",
+      "name": "KFC Restaurant",
+      "email": "kfc@test.com",
+      "address": "Phagwara Punjab,India"
+    },
+    {
+      "id": "dd86",
+      "name": "Suby",
+      "email": "suby@test.com",
+      "address": "Patna Bihar"
+    },
+    {
+      "name": "Kurkure Momos Restaurant",
+      "email": "kurkure@test.com",
+      "address": "Marin DRive Patna , 846516",
+      "id": "178e"
+    },
+    {
+      "id": "e530",
+      "name": "One8 Commun Restaurant",
+      "email": "one8test.com",
+      "address": "Jalandar Punjab, 23"
+    },
+    {
+      "name": "Mohan Sweets",
+      "email": "mohan@test.com",
+      "address": "Tibbi colony Phagwara Punjab, 144001",
+      "id": "705a"
+    },
+    {
+      "id": "870e",
+      "name": "Punjab Bakery",
+      "email": "punjab@test.com",
+      "address": "Phagwara, Station Road"
+    }
+  ]
+}
