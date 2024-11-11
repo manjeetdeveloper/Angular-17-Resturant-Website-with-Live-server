@@ -25,7 +25,7 @@ import { RegisterComponent } from './register/register.component'; //here
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule
-    
+
   ],
   providers: [
     provideClientHydration()

@@ -1,0 +1,34 @@
+{
+  "restaurants": [
+    {
+      "name": "Oven Express Lpu",
+      "email": "ovenexpress@gmail.com",
+      "address": "Lovely Professional University, Punjab",
+      "id": "46ee"
+    },
+    {
+      "name": "Mohan Sweets SHop",
+      "email": "mohansweet@gmail.com",
+      "address": "Phagwara Punjab,India",
+      "id": "8047"
+    },
+    {
+      "id": "a821",
+      "name": "McDonald's",
+      "email": "mcdonalds@demo.com",
+      "address": "Jalandhar, Punjab"
+    },
+    {
+      "id": "b897",
+      "name": null,
+      "email": null,
+      "address": null
+    },
+    {
+      "id": "7c66",
+      "name": "McDonald's",
+      "email": "mcdonalds@demo.com",
+      "address": "JAlandher"
+    }
+  ]
+}

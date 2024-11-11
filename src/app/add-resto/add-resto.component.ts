@@ -16,16 +16,16 @@ export class AddRestoComponent implements OnInit {
   });
 
   constructor(private resto: RestoService) { }
-  // alert properties for form 
-  alert:boolean=false  // form flase 
+  // alert properties for form
+  alert:boolean=false  // form flase
   ngOnInit(): void {}
 
   collectResto(): void {
     this.resto.saveResto(this.addResto.value).subscribe((result) => {
      console.warn("Restaurant added successfully", result);
-     this.alert=true  // form alert true check 
+     this.alert=true  // form alert true check
    });
-   this.addResto.reset({}) //  jab ye excution hoga to ye function form ko BLANK KR DEGA 
+   this.addResto.reset({}) //  jab ye excution hoga to ye function form ko BLANK KR DEGA
   }
   closeAlert()
   {

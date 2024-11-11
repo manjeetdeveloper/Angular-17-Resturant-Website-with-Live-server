@@ -1,59 +1,37 @@
-// import { Component } from '@angular/core';
-
-// @Component({
-//   selector: 'app-register',
-//   templateUrl: './register.component.html',
-//   styleUrl: './register.component.css'
-// })
-// export class RegisterComponent {
-
-// }
-
-
-// import { Component, AfterViewInit } from '@angular/core';
-
-// @Component({
-//   selector: 'app-register',
-//   templateUrl: './register.component.html',
-//   styleUrls: ['./register.component.css']
-// })
-// export class RegisterComponent implements AfterViewInit {
-
-//   ngAfterViewInit() {
-//     const container = document.getElementById('container');
-//     const registerBtn = document.getElementById('register');
-//     const loginBtn = document.getElementById('login');
-
-//     registerBtn?.addEventListener('click', () => {
-//       container?.classList.add("active");
-//     });
-
-//     loginBtn?.addEventListener('click', () => {
-//       container?.classList.remove("active");
-//     });
-//   }
-// }
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { RestoService } from '../resto.service';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
-export class RegisterComponent implements AfterViewInit {
+export class RegisterComponent implements OnInit {
+  registerForm: FormGroup;
+  alert: boolean = false;
 
-  ngAfterViewInit() {
-    const container = document.getElementById('container');
-    const registerBtn = document.getElementById('register');
-    const loginBtn = document.getElementById('login');
-
-    registerBtn?.addEventListener('click', () => {
-      container?.classList.add("active");
-    });
-
-    loginBtn?.addEventListener('click', () => {
-      container?.classList.remove("active");
+  constructor(private restoService: RestoService) {
+    this.registerForm = new FormGroup({
+      name: new FormControl('', [Validators.required, Validators.minLength(3)]),
+      email: new FormControl('', [Validators.required, Validators.email]),
+      address: new FormControl('', [Validators.required])
     });
   }
-}
 
+  ngOnInit(): void {}
+
+  onSubmit() {
+    if (this.registerForm.valid) {
+      this.restoService.saveResto(this.registerForm.value).subscribe(response => {
+        console.log('Registration successful', response);
+        this.alert = true; // Show success alert
+        this.registerForm.reset(); // Reset the form
+      });
+    }
+  }
+
+  closeAlert() {
+    this.alert = false;
+  }
+}

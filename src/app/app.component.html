@@ -10,30 +10,62 @@
       <a class="nav-link nav-item" routerLink="">List Restaurants</a>
       <a class="nav-link nav-item" routerLink="login">Login</a>
       <a class="nav-link nav-item" routerLink="register">Register</a>
-
+      <div class="color-boxes">
+        <div class="color-box" style="background-color: red;" (click)="changeColor('red')"></div>
+        <div class="color-box" style="background-color: green;" (click)="changeColor('green')"></div>
+        <div class="color-box" style="background-color: blue;" (click)="changeColor('blue')"></div>
+        <div class="color-box" style="background-color: orange;" (click)="changeColor('orange')"></div>
+        <div class="color-box" style="background-color: purple;" (click)="changeColor('purple')"></div>
+      </div>
     </div>
   </div>
 </nav>
 
-
-<!-- Ab YAha pr refresh nahi ho rha hai   -->
-
-<!-- footer add -->
 <div class="container">
-  <router-outlet></router-outlet>
+  <div class="sidebar">
+    <div class="sidebar-title">Restaurants</div>
+    <div class="sidebar-images">
+      <img src="assets/imgs/lov.png" alt="Lovely Sweets" class="sidebar-image" />
+      <img src="assets/imgs/foood.png" alt="Foody" class="sidebar-image" />
+      <img src="assets/imgs/mcdo.png" alt="McDonalds" class="sidebar-image" />
+      <img src="assets/imgs/mccafe2.png" alt="McCafee" class="sidebar-image" />
+      <img src="assets/imgs/burgerking.jfif" alt="Fat Chef" class="sidebar-image" />
+    </div>
+  </div>
 
-  <footer>
-    <p>Register Your Restaurant With Us</p>
-  </footer>
-</div>
+  <div class="content">
+    <div class="row">
+      <!-- First Column veg thali -->
+      <div class="col-2">
+        <div class="card custom-card">
+          <div class="custom-thumbnail">
+            <img src="assets/imgs/lov.png" class="img-fluid" />
+          </div>
+          <div class="text-center ion-text-wrap">Lovely Sweets</div>
+        </div>
+      </div>
 
-<!-- <div class="wrapper">
-  <div class="container">
+      <!-- Dynamic Store Cards (from store_types array) -->
+      <div class="col-2" *ngFor="let store of store_types">
+        <div class="card custom-card">
+          <div class="custom-thumbnail">
+            <img [src]="'assets/imgs/' + store.icon" class="img-fluid" />
+          </div>
+          <div class="text-center ion-text-wrap">{{ store.name }}</div>
+        </div>
+      </div>
+
+      <!-- Last Column (Any Store in City) -->
+      <div class="col-2">
+        <div class="card custom-card">
+          <div class="custom-thumbnail">
+            <img src="assets/imgs/foood.png" class="img-fluid" />
+          </div>
+          <div class="text-center ion-text-wrap">Foody</div>
+        </div>
+      </div>
+    </div>
+
     <router-outlet></router-outlet>
   </div>
 </div>
-
-<footer>
-  <p>Register Your Restaurant With Us</p>
-</footer> -->
-
